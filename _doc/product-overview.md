@@ -1,218 +1,124 @@
-Create a modern futuristic cricket scoring mobile app called **"CricketX Pro"**.
+# CricketX Pro — Product Overview
 
-### Design Requirements
+## Product Identity
+**Name**: CricketX Pro  
+**Category**: Mobile App — Sports Scoring & Analytics  
+**Platform**: iOS & Android (Flutter)  
+**Tagline**: Next-generation cricket scoring — futuristic, precise, premium.  
+**Pricing**: Free tier · Premium ₹99/month or ₹499/year · 7-day free trial
 
-* Futuristic UI with glassmorphism and neon effects
-* Dark theme with blue and purple glowing accents
-* Smooth animations and transitions
-* Professional sports dashboard look
-* Mobile-first responsive design
-* Clean and easy-to-use interface
+---
 
-### Main Features
+## Target Users
+- **Club organizers & team captains** who need a reliable in-field scorer with stat history
+- **Amateur and recreational players** who want beautiful, shareable match records
+- **Stats enthusiasts** who track team and player performance across the season
 
-#### 1. Match Setup
+---
 
-* Create new match
-* Team A name input
-* Team B name input
-* Number of overs selection
-* Toss winner selection
-* Batting/Bowling choice
+## Design Language
+Futuristic glassmorphism on a deep-navy base. Electric blue (#00D4FF) and neon purple (#8B5CF6) glowing accents. Smooth animated score updates, holographic-style cards, particle ambient effects, and neon buttons. Mobile-first, every tap target thumb-reachable and legible in sunlight.
 
-#### 2. Live Score Screen
+**Palette**: Deep Navy `#0A0E27` · Electric Blue `#00D4FF` · Neon Purple `#8B5CF6`  
+**Framework**: Flutter · Material 3 Dark Theme
 
-Display:
+---
 
-* Current Score (Runs/Wickets)
-* Overs completed
-* Balls count
-* Run Rate
-* Target (for second innings)
-* Required Run Rate
-* Current batsmen
-* Current bowler
+## Core Feature Areas
 
-#### 3. Ball-by-Ball Controls
+### 1. Match Setup
+Configure a match in seconds: Team A & B names, number of overs, toss winner, batting/bowling choice. Fast entry designed for in-field setup before the first ball.
 
-Buttons:
+### 2. Live Score Screen
+Real-time scoring dashboard displaying: current score (runs/wickets), overs and ball count (e.g. 5.2, 10.4), run rate, second-innings target, required run rate, current batsmen with live stats, current bowler with live figures.
 
-* 0 Run
-* 1 Run
-* 2 Runs
-* 3 Runs
-* 4 Runs
-* 6 Runs
-* Wicket
-* Wide
-* No Ball
-* Bye
-* Leg Bye
-* Undo Last Ball
+### 3. Ball-by-Ball Controls
+One-tap scoring buttons: 0 runs, 1 run, 2 runs, 3 runs, 4 runs, 6 runs, Wicket, Wide, No Ball, Bye, Leg Bye. Plus **Undo Last Ball** action for corrections.
 
-#### 4. Over Tracking
+### 4. Over Tracking
+Automatic ball counting with over completion detection. Current over displayed in standard format (e.g. "5.2 Overs"). Scrollable over-summary history showing each over's breakdown.
 
-* Automatic ball counting
-* Automatic over completion
-* Display current over like:
+### 5. Team Statistics
+Per-innings: total runs, wickets, extras, boundary count (4s + 6s), run rate graph visualised over the innings.
 
-  * 5.2 Overs
-  * 10.4 Overs
-* Over summary history
+### 6. Player Statistics
+**Batting**: runs, balls faced, strike rate, fours, sixes.  
+**Bowling**: overs bowled, runs conceded, wickets taken, economy rate.
 
-#### 5. Team Statistics
+### 7. Match Summary & Sharing
+Result screen: winning team, margin of victory, full scorecard, Man of the Match selector, and share-scorecard-as-image export.
 
-* Total runs
-* Wickets
-* Extras
-* Boundaries count
-* Run rate graph
+---
 
-#### 6. Player Statistics
+## Authentication & User Accounts
 
-* Runs
-* Balls faced
-* Strike rate
-* Fours
-* Sixes
-* Bowling figures
-* Economy rate
+### Login Methods
+Email & Password · Google Sign-In · Phone Number (OTP) · Guest mode (no account required)
 
-#### 7. Match Summary
+### Registration
+Name, email, password, optional profile picture.
 
-* Winning team
-* Margin of victory
-* Full scorecard
-* Man of the Match
-* Share scorecard as image
+### User Profile
+Username, profile photo, matches played, matches won, premium status badge, edit profile.
 
-### Extra Futuristic Features
+### Security
+Firebase Authentication · password reset via email · secure sessions · logout.
 
-* Animated score updates
-* Live glowing scoreboard
-* Holographic-style cards
-* Particle background effects
-* Neon buttons
-* Real-time match progress visualization
+### Cloud Sync
+Match data saved to Firebase Firestore. Automatic sync across all signed-in devices. Scorecard backup runs automatically.
 
-### Technology
+---
 
-* Flutter
-* Firebase backend
-* Firestore database
-* Material 3 Design
-* Dark futuristic theme
-* Optimized for Android and iOS
+## Monetization
 
-Generate complete UI screens, database structure, navigation flow, and production-ready code
+### Free Tier
+- Basic ball-by-ball score tracking
+- Team management
+- Match summary
+- Last 5 matches of history
 
-### In-App Purchase Features
+### Premium (₹99/month · ₹499/year · 7-day free trial)
+- Unlimited match history
+- Advanced player statistics
+- AI-powered match insights
+- Custom team logos
+- Premium futuristic themes
+- Cloud backup & sync (Firestore)
+- Ad-free experience
+- Export scorecards as PDF and images
+- Live score sharing via shareable link
+- Gold/Neon premium badge
+- Animated premium card UI
 
-#### Free Version
+### Purchase Infrastructure
+- RevenueCat for cross-platform subscription management
+- Google Play Billing Library (Android)
+- Apple StoreKit (iOS)
+- Subscription management screen with restore purchases option
+- Feature comparison table
+- Locked premium features display upgrade prompts to free users
+- Secure backend validation via RevenueCat webhooks
 
-* Basic score tracking
-* Team management
-* Match summary
-* Limited match history (last 5 matches)
+---
 
-#### Premium Version (₹99/month or ₹499/year)
+## Technology Stack
 
-Unlock:
+| Layer | Choice |
+|---|---|
+| App Framework | Flutter |
+| Backend & Database | Firebase Firestore |
+| Authentication | Firebase Authentication |
+| Design System | Material 3 Dark |
+| Subscription Management | RevenueCat |
+| Android Billing | Google Play Billing Library |
+| iOS Billing | Apple StoreKit |
+| Auth Providers | Firebase Auth · Google Sign-In SDK · OTP |
 
-* Unlimited match history
-* Advanced player statistics
-* AI-powered match insights
-* Custom team logos
-* Premium futuristic themes
-* Cloud backup & sync
-* Ad-free experience
-* Export scorecards as PDF and images
-* Live score sharing via link
+---
 
-#### Purchase System
-
-* Google Play Billing (Android)
-* Apple In-App Purchase (iOS)
-* Subscription management screen
-* Restore purchases option
-* Secure purchase verification
-* Premium badge for subscribed users
-
-#### Monetization Dashboard
-
-* Premium subscription status
-* Upgrade button
-* Feature comparison table
-* Free trial (7 days)
-
-### Premium UI
-
-* Gold/Neon Premium badge
-* Animated premium cards
-* Locked premium features with upgrade prompts
-* Futuristic subscription screen with monthly/yearly plans
-
-### Tech Requirements
-
-* Flutter + Firebase
-* Google Play Billing Library
-* Apple StoreKit
-* RevenueCat integration for subscription management
-* Secure backend validation
-Cricket app mein **Login System** add karne ke liye prompt mein ye section add karo:
-
-### Authentication & Login
-
-#### Login Methods
-
-* Email & Password Login
-* Google Sign-In
-* Phone Number Login (OTP Verification)
-* Guest Login Option
-
-#### Registration
-
-* Name
-* Email
-* Password
-* Profile Picture (Optional)
-
-#### User Profile
-
-* Username
-* Profile Photo
-* Matches Played
-* Matches Won
-* Premium Status
-* Edit Profile
-
-#### Security
-
-* Firebase Authentication
-* Password Reset via Email
-* Secure User Sessions
-* Logout Option
-
-#### Cloud Sync
-
-* Save match data to Firebase Firestore
-* Sync matches across multiple devices
-* Backup scorecards automatically
-
-### Login Screen UI
-
-* Futuristic dark theme
-* Neon glowing login card
-* Animated background
-* Google Login button
-* Phone Login button
-* "Continue as Guest" option
-* Smooth transitions and loading animations
-
-### Technology
-
-* Flutter
-* Firebase Authentication
-* Firebase Firestore
-* Google Sign-In SDK
-* OTP Verification
+## Strategic Principles
+1. **In-field first** — every control is one tap, every label readable in sunlight.
+2. **Stats delight** — beautiful, shareable scorecards are the primary viral loop.
+3. **Freemium monetization** — generous free tier builds trust; premium converts on history depth and export.
+4. **Cross-device continuity** — Firebase sync means score on one phone, review on any device.
+5. **Platform-native billing** — RevenueCat abstracts Play + StoreKit for a single subscription codebase.
