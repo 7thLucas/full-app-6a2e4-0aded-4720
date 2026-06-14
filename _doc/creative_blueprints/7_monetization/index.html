@@ -1,0 +1,121 @@
+<style>
+  .sl-plans { display: flex; flex-direction: column; gap: 1rem; flex: 1; }
+  .mode-landscape .sl-plans { flex-direction: row; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10" style="gap:1.25rem;">
+
+    <!-- Header -->
+    <div>
+      <span class="text-xs font-bold tracking-widest uppercase text-slate-400">Business Model</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">Pricing &amp; Monetization</h2>
+    </div>
+
+    <div class="sl-plans">
+
+      <!-- Free plan -->
+      <div class="flex-1 rounded-xl p-6 flex flex-col" style="background:#f8fafc; border:1.5px solid #e2e8f0;">
+        <div class="mb-5">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-1">Free</div>
+          <div class="text-3xl font-black text-slate-900">₹0</div>
+          <div class="text-xs text-slate-400 mt-0.5">Always free · no card required</div>
+        </div>
+        <ul class="space-y-2 flex-1">
+          <li class="flex gap-2 items-center">
+            <span class="text-green-500 font-bold text-sm">✓</span>
+            <span class="text-xs text-slate-700">Basic ball-by-ball score tracking</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="text-green-500 font-bold text-sm">✓</span>
+            <span class="text-xs text-slate-700">Team management</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="text-green-500 font-bold text-sm">✓</span>
+            <span class="text-xs text-slate-700">Match summary &amp; scorecard</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="text-green-500 font-bold text-sm">✓</span>
+            <span class="text-xs text-slate-700">Last 5 matches history</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="text-slate-300 font-bold text-sm">✗</span>
+            <span class="text-xs text-slate-400">Advanced stats &amp; insights</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="text-slate-300 font-bold text-sm">✗</span>
+            <span class="text-xs text-slate-400">PDF &amp; image export</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="text-slate-300 font-bold text-sm">✗</span>
+            <span class="text-xs text-slate-400">Unlimited match history</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="text-slate-300 font-bold text-sm">✗</span>
+            <span class="text-xs text-slate-400">Live score sharing</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Premium plan -->
+      <div class="flex-1 rounded-xl p-6 flex flex-col relative overflow-hidden" style="background:#0A0E27;">
+        <!-- Trial badge -->
+        <div class="absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full" style="background:#8B5CF6; color:white;">7-day free trial</div>
+
+        <div class="mb-5">
+          <div class="text-xs font-bold uppercase tracking-wide mb-1" style="color:#00D4FF;">Premium</div>
+          <div class="flex items-end gap-2">
+            <div class="text-3xl font-black text-white">₹99</div>
+            <div class="text-xs text-slate-400 mb-1">/month</div>
+          </div>
+          <div class="text-xs mt-0.5" style="color:#8B5CF6;">or ₹499 / year — save 58%</div>
+        </div>
+
+        <ul class="space-y-1.5 flex-1">
+          <li class="flex gap-2 items-center">
+            <span class="font-bold text-sm" style="color:#00D4FF;">✓</span>
+            <span class="text-xs text-slate-300">Unlimited match history</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="font-bold text-sm" style="color:#00D4FF;">✓</span>
+            <span class="text-xs text-slate-300">Advanced player statistics</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="font-bold text-sm" style="color:#00D4FF;">✓</span>
+            <span class="text-xs text-slate-300">AI-powered match insights</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="font-bold text-sm" style="color:#00D4FF;">✓</span>
+            <span class="text-xs text-slate-300">Custom team logos &amp; premium themes</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="font-bold text-sm" style="color:#00D4FF;">✓</span>
+            <span class="text-xs text-slate-300">Cloud backup &amp; sync</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="font-bold text-sm" style="color:#00D4FF;">✓</span>
+            <span class="text-xs text-slate-300">Ad-free experience</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="font-bold text-sm" style="color:#00D4FF;">✓</span>
+            <span class="text-xs text-slate-300">Export scorecards as PDF &amp; image</span>
+          </li>
+          <li class="flex gap-2 items-center">
+            <span class="font-bold text-sm" style="color:#00D4FF;">✓</span>
+            <span class="text-xs text-slate-300">Live score sharing via link</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Infrastructure footer -->
+    <div class="flex items-center flex-wrap gap-2">
+      <span class="text-xs text-slate-500 mr-1">Powered by</span>
+      <span class="text-xs font-bold px-3 py-1 rounded-full text-white" style="background:#0A0E27;">RevenueCat</span>
+      <span class="text-xs font-semibold px-3 py-1 rounded-full text-slate-700 bg-slate-100">Google Play Billing</span>
+      <span class="text-xs font-semibold px-3 py-1 rounded-full text-slate-700 bg-slate-100">Apple StoreKit</span>
+      <span class="text-xs text-slate-400 ml-2">· Restore purchases · Secure backend validation</span>
+    </div>
+
+  </div>
+</section>
