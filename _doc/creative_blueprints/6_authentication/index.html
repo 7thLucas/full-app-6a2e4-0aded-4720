@@ -1,0 +1,103 @@
+<style>
+  .sl-cols { display: flex; flex-direction: column; gap: 1rem; flex: 1; }
+  .mode-landscape .sl-cols { flex-direction: row; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10" style="gap:1.25rem;">
+
+    <!-- Header -->
+    <div>
+      <span class="text-xs font-bold tracking-widest uppercase text-slate-400">User Accounts</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">Authentication &amp; Cloud Sync</h2>
+    </div>
+
+    <div class="sl-cols">
+
+      <!-- Login Methods -->
+      <div class="flex-1 rounded-xl p-5 flex flex-col" style="background:#0A0E27;">
+        <div class="text-xs font-bold tracking-widest uppercase mb-4" style="color:#00D4FF;">Login Methods</div>
+        <div class="space-y-2.5">
+          <div class="flex items-center gap-3 p-3 rounded-lg" style="background:#ffffff12;">
+            <span style="font-size:1.1rem;">📧</span>
+            <div>
+              <div class="text-xs font-bold text-white">Email &amp; Password</div>
+              <div class="text-xs text-slate-400">Standard login with password reset via email</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 p-3 rounded-lg" style="background:#ffffff12;">
+            <span style="font-size:1.1rem;">🔵</span>
+            <div>
+              <div class="text-xs font-bold text-white">Google Sign-In</div>
+              <div class="text-xs text-slate-400">One-tap Google account authentication</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 p-3 rounded-lg" style="background:#ffffff12;">
+            <span style="font-size:1.1rem;">📱</span>
+            <div>
+              <div class="text-xs font-bold text-white">Phone OTP</div>
+              <div class="text-xs text-slate-400">Verify identity via SMS one-time code</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 p-3 rounded-lg" style="background:#ffffff12;">
+            <span style="font-size:1.1rem;">👤</span>
+            <div>
+              <div class="text-xs font-bold text-white">Guest Mode</div>
+              <div class="text-xs text-slate-400">Score matches without creating an account</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Profile -->
+      <div class="flex-1 rounded-xl p-5 flex flex-col" style="background:#faf5ff; border:1.5px solid #8B5CF644;">
+        <div class="text-xs font-bold tracking-widest uppercase mb-4" style="color:#8B5CF6;">User Profile</div>
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full flex-shrink-0" style="background:#8B5CF6;"></span>
+            <span class="text-xs text-slate-700">Username &amp; profile photo</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full flex-shrink-0" style="background:#8B5CF6;"></span>
+            <span class="text-xs text-slate-700">Matches Played &amp; Won stats</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full flex-shrink-0" style="background:#8B5CF6;"></span>
+            <span class="text-xs text-slate-700">Premium status badge</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full flex-shrink-0" style="background:#8B5CF6;"></span>
+            <span class="text-xs text-slate-700">Edit profile at any time</span>
+          </div>
+        </div>
+        <div class="mt-4 pt-4" style="border-top:1px solid #8B5CF630;">
+          <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color:#8B5CF6;">Security</div>
+          <div class="space-y-1.5">
+            <div class="text-xs text-slate-600">Firebase Authentication</div>
+            <div class="text-xs text-slate-600">Password reset via email</div>
+            <div class="text-xs text-slate-600">Secure sessions · logout anywhere</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Sync -->
+      <div class="flex-1 rounded-xl p-5 flex flex-col" style="background:#f0fbfd; border:1.5px solid #00D4FF44;">
+        <div class="text-xs font-bold tracking-widest uppercase mb-4" style="color:#0099BB;">Cloud Sync</div>
+        <div class="space-y-4">
+          <div>
+            <div class="text-xs font-bold text-slate-900 mb-1">Firestore Sync</div>
+            <p class="text-xs text-slate-600 leading-relaxed">Match data saved to Firebase Firestore in real time — accessible from any signed-in device instantly.</p>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-900 mb-1">Cross-Device</div>
+            <p class="text-xs text-slate-600 leading-relaxed">Score on your phone in the field, review the full scorecard on your tablet at home — perfectly in sync.</p>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-900 mb-1">Auto Backup</div>
+            <p class="text-xs text-slate-600 leading-relaxed">Scorecards backed up automatically after every match — no manual exports or uploads needed.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
