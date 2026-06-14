@@ -1,0 +1,63 @@
+<style>
+  .sl-wrap { display: flex; width: 100%; height: 100%; flex-direction: column; }
+  .sl-hero { display: none; }
+  .mode-landscape .sl-wrap { flex-direction: row; }
+  .mode-landscape .sl-content { width: 57%; }
+  .mode-landscape .sl-hero { display: block; width: 43%; flex-shrink: 0; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-wrap">
+
+    <!-- Left: text content -->
+    <div class="sl-content flex flex-col justify-between p-12">
+      <div>
+        <!-- Eyebrow -->
+        <div class="flex items-center gap-2 mb-8">
+          <div class="w-2 h-2 rounded-full" style="background:#00D4FF;"></div>
+          <span class="text-xs font-bold tracking-widest uppercase text-slate-400">Sports Scoring · Flutter · Firebase</span>
+        </div>
+
+        <!-- App name badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-7" style="background:#0A0E27;">
+          <div class="w-2 h-2 rounded-full" style="background:#8B5CF6;"></div>
+          <span class="text-sm font-bold text-white tracking-wider">CricketX Pro</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="font-black leading-tight mb-5 text-slate-900" style="font-size:3.2rem; line-height:1.05;">
+          Cricket<br>Scoring.<br><span style="color:#00D4FF;">Reinvented.</span>
+        </h1>
+
+        <!-- Tagline -->
+        <p class="text-slate-600 leading-relaxed max-w-xs mb-8" style="font-size:0.95rem;">
+          Ball-by-ball precision meets futuristic design. The scorer your team deserves — cloud-synced, beautifully shareable.
+        </p>
+
+        <!-- Feature pills -->
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs font-semibold px-3 py-1 rounded-full text-white" style="background:#0A0E27;">iOS &amp; Android</span>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="color:#00D4FF;background:#00D4FF18;border:1px solid #00D4FF55;">Glassmorphism UI</span>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="color:#8B5CF6;background:#8B5CF618;border:1px solid #8B5CF655;">Cloud Sync</span>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full text-slate-600 bg-slate-100">RevenueCat</span>
+        </div>
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: dark hero image panel -->
+    <div class="sl-hero relative overflow-hidden" style="background:#0A0E27;">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=futuristic%20cricket%20scoring%20mobile%20app%20dark%20UI%20neon%20blue%20purple%20glassmorphism%20glowing%20scoreboard%20professional%20sports%20dashboard%20smartphone%20screen"
+        alt="CricketX Pro app"
+        class="w-full h-full object-cover"
+        style="opacity:0.85;"
+      />
+      <div class="absolute inset-0" style="background:linear-gradient(90deg,#0A0E27 0%,transparent 38%);"></div>
+    </div>
+
+  </div>
+</section>
