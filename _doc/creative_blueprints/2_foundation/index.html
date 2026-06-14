@@ -1,0 +1,85 @@
+<style>
+  .sl-cards { display: flex; flex-direction: column; gap: 1rem; flex: 1; }
+  .mode-landscape .sl-cards { flex-direction: row; }
+  .sl-image { display: none; }
+  .mode-landscape .sl-image { display: block; width: 28%; flex-shrink: 0; border-radius: 0.875rem; overflow: hidden; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10" style="gap:1.25rem;">
+
+    <!-- Header -->
+    <div>
+      <span class="text-xs font-bold tracking-widest uppercase text-slate-400">The Case for CricketX Pro</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">Problem → Solution</h2>
+    </div>
+
+    <!-- Cards row -->
+    <div class="sl-cards">
+
+      <!-- Problem card -->
+      <div class="flex-1 rounded-2xl p-6 flex flex-col" style="background:#0A0E27;">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-2 h-2 rounded-full" style="background:#8B5CF6;"></div>
+          <span class="text-xs font-bold tracking-widest uppercase" style="color:#8B5CF6;">The Problem</span>
+        </div>
+        <h3 class="text-base font-bold text-white mb-4">Scoring cricket is still stuck in the past</h3>
+        <ul class="space-y-2.5 flex-1">
+          <li class="flex gap-2.5 items-start">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#8B5CF6;"></span>
+            <span class="text-xs text-slate-300 leading-relaxed">Paper scorebooks get wet, lost, and can't be shared after the match</span>
+          </li>
+          <li class="flex gap-2.5 items-start">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#8B5CF6;"></span>
+            <span class="text-xs text-slate-300 leading-relaxed">Manual run rate and RRR calculations create scorer errors and slow the game</span>
+          </li>
+          <li class="flex gap-2.5 items-start">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#8B5CF6;"></span>
+            <span class="text-xs text-slate-300 leading-relaxed">No digital record — player stats and match history vanish after every match</span>
+          </li>
+          <li class="flex gap-2.5 items-start">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#8B5CF6;"></span>
+            <span class="text-xs text-slate-300 leading-relaxed">Club organizers can't track team performance or player growth across the season</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Solution card -->
+      <div class="flex-1 rounded-2xl p-6 flex flex-col" style="background:#f0fbfd; border:1.5px solid #00D4FF44;">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-2 h-2 rounded-full" style="background:#00D4FF;"></div>
+          <span class="text-xs font-bold tracking-widest uppercase" style="color:#0099BB;">The Solution</span>
+        </div>
+        <h3 class="text-base font-bold text-slate-900 mb-4">CricketX Pro — one tap scores the game</h3>
+        <ul class="space-y-2.5 flex-1">
+          <li class="flex gap-2.5 items-start">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#00D4FF;"></span>
+            <span class="text-xs text-slate-700 leading-relaxed">Cloud-saved scorecard after every ball — zero risk of ever losing a record</span>
+          </li>
+          <li class="flex gap-2.5 items-start">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#00D4FF;"></span>
+            <span class="text-xs text-slate-700 leading-relaxed">Auto run rate, RRR, strike rate, economy — completely zero manual math</span>
+          </li>
+          <li class="flex gap-2.5 items-start">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#00D4FF;"></span>
+            <span class="text-xs text-slate-700 leading-relaxed">Shareable scorecards as images and PDF — WhatsApp-ready in one tap</span>
+          </li>
+          <li class="flex gap-2.5 items-start">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#00D4FF;"></span>
+            <span class="text-xs text-slate-700 leading-relaxed">Full match history, player profiles, and AI-powered team analytics</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Landscape-only image panel -->
+      <div class="sl-image" style="background:#0A0E27;">
+        <img
+          src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=cricket%20players%20batting%20field%20pitch%20dramatic%20stadium%20floodlights%20action%20professional%20sport%20photography%20dark%20atmosphere"
+          alt="Cricket match"
+          class="w-full h-full object-cover"
+          style="opacity:0.72;"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
