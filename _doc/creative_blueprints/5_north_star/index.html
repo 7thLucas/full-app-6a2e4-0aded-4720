@@ -1,0 +1,88 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10" style="gap:1rem;">
+
+    <!-- Header -->
+    <div>
+      <span class="text-xs font-bold tracking-widest uppercase text-slate-400">The Number That Matters Most</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">Weekly Verified Operations</h2>
+    </div>
+
+    <!-- Operation definition -->
+    <div class="rounded-xl p-5 flex items-start gap-4" style="background:#0A0E27; border-left:4px solid #00D4FF;">
+      <div class="flex-1">
+        <div class="text-xs font-bold tracking-widest uppercase mb-1" style="color:#00D4FF;">Verified Operation</div>
+        <div class="text-lg font-black text-white mb-1">Match Scored</div>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          A complete ball-by-ball cricket match scoring session confirmed and saved to Firebase Firestore by a real user.
+          Logins, page views, profile edits, and partial sessions do not count.
+        </p>
+      </div>
+    </div>
+
+    <!-- WVO formula + Value per op side by side -->
+    <div class="grid gap-3" style="grid-template-columns:1fr 1fr;">
+
+      <!-- WVO Projection -->
+      <div class="rounded-xl p-5" style="background:#faf5ff; border:1px solid #8B5CF644;">
+        <div class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-3">WVO Projection</div>
+        <div class="space-y-2 text-xs text-slate-700">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-2 py-0.5 rounded text-white text-xs font-bold" style="background:#8B5CF6;">Assumption — adjust this</span>
+            <span>3 matches scored per week</span>
+          </div>
+          <div class="text-slate-400 text-xs pl-1">↳ update to your club's actual match frequency</div>
+        </div>
+        <div class="mt-4 pt-3" style="border-top:1px solid #8B5CF630;">
+          <div class="text-2xl font-black text-slate-900">3 <span class="text-sm font-normal text-slate-500">WVO / week</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">= 156 Match Scored operations / year</div>
+        </div>
+      </div>
+
+      <!-- Value per operation -->
+      <div class="rounded-xl p-5" style="background:#f0fbfd; border:1px solid #00D4FF44;">
+        <div class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-3">Value per Operation</div>
+        <div class="space-y-1.5 text-xs text-slate-700">
+          <div>30 min manual scoring work saved</div>
+          <div class="flex items-center gap-1.5 flex-wrap">
+            <span>×</span>
+            <span class="px-2 py-0.5 rounded text-white text-xs font-bold" style="background:#8B5CF6;">Assumption</span>
+            <span>₹150 / hr scorer time</span>
+          </div>
+          <div class="font-semibold">= ₹75 time value saved</div>
+          <div>+ ₹25 digital record &amp; sharing value</div>
+        </div>
+        <div class="mt-4 pt-3" style="border-top:1px solid #00D4FF30;">
+          <div class="text-2xl font-black text-slate-900">₹100 <span class="text-sm font-normal text-slate-500">per match</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Total value + ROI block -->
+    <div class="rounded-xl p-5 flex items-center gap-0" style="background:#0A0E27;">
+      <div class="flex-1 text-center px-4">
+        <div class="text-xs text-slate-400 uppercase tracking-wide mb-1">Per week</div>
+        <div class="text-2xl font-black" style="color:#00D4FF;">₹300</div>
+        <div class="text-xs text-slate-500">3 ops × ₹100</div>
+      </div>
+      <div class="w-px self-stretch" style="background:#ffffff18;"></div>
+      <div class="flex-1 text-center px-4">
+        <div class="text-xs text-slate-400 uppercase tracking-wide mb-1">Per year</div>
+        <div class="text-2xl font-black" style="color:#00D4FF;">₹15,600</div>
+        <div class="text-xs text-slate-500">₹300 × 52 weeks</div>
+      </div>
+      <div class="w-px self-stretch" style="background:#ffffff18;"></div>
+      <div class="flex-1 text-center px-4">
+        <div class="text-xs text-slate-400 uppercase tracking-wide mb-1">ROI on Premium (₹499/yr)</div>
+        <div class="text-3xl font-black" style="color:#8B5CF6;">31×</div>
+        <div class="text-xs text-slate-500">₹15,600 ÷ ₹499</div>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <p class="text-xs text-slate-400 italic">
+      Projected impact — based on your inputs. Assumptions above are editable. Measured values may replace projections once the app is live.
+    </p>
+
+  </div>
+</section>
